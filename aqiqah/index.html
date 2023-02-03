@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Explora&family=Lora:ital,wght@0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet" />
+    <title>Muhammad Taqi Ar Rauf</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card" data-tilt>
+        <img src="images/taqi.png" alt="" />
+        <section id="intro">
+          <h2>Hadirilah</h2>
+          <p>Acara Aqiqah Anak Kami</p>
+          <h1>Muhammad Taqi Ar Rauf</h1>
+          <span onclick="Login()" class="btn">Hari Dan Tanggal</span>
+        </section>
+        <section id="detail">
+          <h2>Akan Dilaksanakan</h2>
+          <h5>Sabtu</h5>
+          <h5>4 Februari 2023</h5>
+          <p>Kp. Baros Kidul RT/RW. 03/06 Desa Sukataris, Kecamatan Karangtengah, Kabupaten Cianjur</p>
+          <span onclick="tanggal()" class="btn">Back</span>
+        </section>
+      </div>
+    </div>
+  </body>
+  <script>
+    var detail = document.getElementById("detail");
+    var intro = document.getElementById("intro");
+    // var indicator = document.getElementById("indicator");
+
+    function tanggal() {
+      intro.style.transform = "translateX(0px)";
+      detail.style.transform = "translateX(0px)";
+      // indicator.style.transform = "translateX(100px)";
+    }
+    function Login() {
+      intro.style.transform = "translateX(400px)";
+      detail.style.transform = "translateX(400px)";
+      // indicator.style.transform = "translateX(0)";
+    }
+  </script>
+</html>
